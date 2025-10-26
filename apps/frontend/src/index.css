@@ -1,0 +1,283 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    border-color: theme('colors.gray.200');
+  }
+  
+  body {
+    background-color: theme('colors.gray.50');
+    color: theme('colors.gray.900');
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none ring-offset-white;
+  }
+  
+  .btn-primary {
+    @apply btn bg-primary-600 text-white hover:bg-primary-700 active:bg-primary-800;
+  }
+  
+  .btn-secondary {
+    @apply btn bg-secondary-600 text-white hover:bg-secondary-700 active:bg-secondary-800;
+  }
+  
+  .btn-outline {
+    @apply btn border border-gray-300 bg-transparent hover:bg-gray-100 hover:text-gray-900;
+  }
+  
+  .card {
+    @apply rounded-lg border border-gray-200 bg-white shadow-sm;
+  }
+  
+  .input {
+    @apply flex h-10 w-full rounded-md border border-gray-300 bg-white px-3 py-2 text-sm text-gray-900 placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent disabled:cursor-not-allowed disabled:opacity-50;
+  }
+  
+  .label {
+    @apply text-sm font-medium leading-none text-gray-700;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .animation-delay-200 {
+    animation-delay: 200ms;
+  }
+  
+  .animation-delay-400 {
+    animation-delay: 400ms;
+  }
+  
+  .animation-delay-600 {
+    animation-delay: 600ms;
+  }
+
+  /* Page-specific background gradients with darker themes */
+  .bg-dashboard {
+    background-image: linear-gradient(to bottom right, rgb(212, 227, 197), rgb(255, 255, 255), rgb(212, 227, 197));
+  }
+
+  .bg-traceability {
+    background-image: linear-gradient(to bottom right, rgb(212, 227, 197), rgb(255, 255, 255), rgb(212, 227, 197));
+  }
+
+  .bg-farmers {
+    background-image: linear-gradient(to bottom right, rgb(212, 227, 197), rgb(255, 255, 255), rgb(212, 227, 197));
+  }
+
+  .bg-fpos {
+    background-image: linear-gradient(to bottom right, rgb(212, 227, 197), rgb(255, 255, 255), rgb(212, 227, 197));
+  }
+
+  .bg-analytics {
+    background-image: linear-gradient(to bottom right, rgb(212, 227, 197), rgb(255, 255, 255), rgb(212, 227, 197));
+  }
+
+  .bg-storage {
+    background-image: linear-gradient(to bottom right, rgb(212, 227, 197), rgb(255, 255, 255), rgb(212, 227, 197));
+  }
+
+  .bg-weather {
+    background-image: linear-gradient(to bottom right, rgb(212, 227, 197), rgb(255, 255, 255), rgb(212, 227, 197));
+  }
+
+  .bg-retailers {
+    background-image: linear-gradient(to bottom right, rgb(212, 227, 197), rgb(255, 255, 255), rgb(212, 227, 197));
+  }
+
+  .bg-processors {
+    background-image: linear-gradient(to bottom right, rgb(212, 227, 197), rgb(255, 255, 255), rgb(212, 227, 197));
+  }
+
+  /* Component background variations */
+  .bg-card-gradient {
+    background-color: rgba(17, 24, 39, 0.7);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .bg-stats-card {
+    background-color: rgba(17, 24, 39, 0.8);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.2s ease;
+  }
+  .bg-stats-card:hover {
+    background-color: rgba(17, 24, 39, 0.9);
+    transform: translateY(-2px);
+  }
+
+  .bg-action-card {
+    background-color: rgba(17, 24, 39, 0.75);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.2s ease;
+  }
+  .bg-action-card:hover {
+    background-color: rgba(17, 24, 39, 0.85);
+    transform: translateY(-2px);
+  }
+
+  /* Slow pulse using the animation defined in tailwind.config */
+  .animate-pulse-slow {
+    animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+
+  /* Gradient background utilities */
+  .bg-accent-gradient {
+    background-image: linear-gradient(90deg, rgba(14,165,233,0.08), rgba(217,70,239,0.06));
+  }
+
+  .bg-hero-gradient {
+    background-image: linear-gradient(180deg, rgba(14,165,233,0.04), rgba(255,255,255,0));
+  }
+
+  .btn-ghost {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.375rem;
+    padding: 0.5rem 0.75rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: rgb(55, 65, 81);
+    transition: all 0.2s;
+  }
+  .btn-ghost:hover {
+    background-color: rgb(243, 244, 246);
+    transform: scale(1.05);
+  }
+
+  .card-elevated {
+    border-radius: 0.5rem;
+    border: 1px solid rgb(229, 231, 235);
+    background-color: white;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+    transition: box-shadow 0.2s;
+  }
+  .card-elevated:hover {
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1);
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgb(243, 244, 246);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(209, 213, 219);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(156, 163, 175);
+}
+
+/* Dark mode scrollbar */
+.dark ::-webkit-scrollbar-track {
+  background-color: rgb(31, 41, 55);
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background-color: rgb(75, 85, 99);
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(107, 114, 128);
+}
+
+/* 3D Canvas styles */
+canvas {
+  touch-action: none;
+}
+
+/* Performance optimizations */
+.will-change-transform {
+  will-change: transform;
+}
+
+.will-change-opacity {
+  will-change: opacity;
+}
+
+/* Loading animations */
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+
+/* Fade animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* slow pulse keyframes (used by animate-pulse-slow) */
+@keyframes pulse {
+  0% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.85; transform: scale(1.01); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+/* Slide animations */
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-slide-up {
+  animation: slideUp 0.3s ease-out;
+}
+
+/* Scale animations */
+@keyframes scaleIn {
+  from {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.animate-scale-in {
+  animation: scaleIn 0.2s ease-out;
+}

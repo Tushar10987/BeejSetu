@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeejSetu Footer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <footer class="bg-black text-white w-full py-12" role="contentinfo" aria-label="Site footer">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- About Us -->
+                <div class="space-y-4" data-section="footer" data-subsection="about">
+                    <h2 class="text-xl font-semibold">About Us</h2>
+                    <p class="text-gray-300">
+                        BeejSetu empowers farmers, FPOs, processors and buyers to capture full value from oilseed by-products. 
+                        We combine predictive analytics, IoT-enabled quality verification, blockchain-based traceability and logistics 
+                        optimization to connect smallholders with processors, traders and export opportunities — increasing farmer 
+                        income while reducing post-harvest loss.
+                    </p>
+                </div>
+
+                <!-- Contact Us -->
+                <div class="space-y-4" data-section="footer" data-subsection="contact">
+                    <h2 class="text-xl font-semibold">Contact Us</h2>
+                    <address class="not-italic space-y-2 text-gray-300">
+                        <p>
+                            <strong>General Enquiries:</strong><br>
+                            <a href="mailto:support@beejsetu.in" class="hover:underline">
+                                support@beejsetu.in
+                            </a>
+                        </p>
+                        <p>
+                            <strong>Farmer Helpline:</strong><br>
+                            +91-8888888888<br>
+                            <span class="text-sm">(Mon–Sat, 08:00–20:00 IST)</span>
+                        </p>
+                        <p>
+                            <strong>Business & Partnerships:</strong><br>
+                            <a href="mailto:partners@beejsetu.in" class="hover:underline">
+                                partners@beejsetu.in
+                            </a>
+                        </p>
+                        <p>
+                            <strong>Media & Press:</strong><br>
+                            <a href="mailto:press@beejsetu.in" class="hover:underline">
+                                press@beejsetu.in
+                            </a>
+                        </p>
+                    </address>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="space-y-4" data-section="footer" data-subsection="links">
+                    <h2 class="text-xl font-semibold">Quick Links</h2>
+                    <nav>
+                        <ul class="space-y-2 text-gray-300">
+                            <li><a href="/how-it-works" class="hover:underline">How it Works</a></li>
+                            <li><a href="/marketplace" class="hover:underline">Marketplace</a></li>
+                            <li><a href="/loans" class="hover:underline">Loans & Insurance</a></li>
+                            <li><a href="/export" class="hover:underline">Export Opportunities</a></li>
+                            <li><a href="/traceability" class="hover:underline">Traceability</a></li>
+                            <li><a href="/help" class="hover:underline">Help Center</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <!-- Newsletter & Metrics -->
+                <div class="space-y-6" data-section="footer" data-subsection="newsletter">
+                    <div class="space-y-4">
+                        <h2 class="text-xl font-semibold">Stay Updated</h2>
+                        <p class="text-gray-300">
+                            Subscribe to the BeejSetu Bulletin for price forecasts, export leads, and advisories.
+                        </p>
+                        <form class="flex space-x-2">
+                            <input
+                                type="email"
+                                placeholder="Your email"
+                                class="flex-1 px-4 py-2 rounded-lg bg-gray-800 text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                aria-label="Email for newsletter"
+                            />
+                            <button
+                                type="submit"
+                                class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                            >
+                                Subscribe
+                            </button>
+                        </form>
+                    </div>
+
+                    <div class="space-y-2" data-section="footer" data-subsection="metrics" aria-live="polite">
+                        <h2 class="text-xl font-semibold">Platform Metrics</h2>
+                        <div class="grid grid-cols-2 gap-4 text-sm">
+                            <div>
+                                <p class="text-gray-400">Today's Visitors</p>
+                                <p class="text-xl font-semibold">1,247</p>
+                            </div>
+                            <div>
+                                <p class="text-gray-400">Monthly Visitors</p>
+                                <p class="text-xl font-semibold">28,456</p>
+                            </div>
+                            <div>
+                                <p class="text-gray-400">Registered Users</p>
+                                <p class="text-xl font-semibold">5,689</p>
+                            </div>
+                            <div>
+                                <p class="text-gray-400">Active FPOs</p>
+                                <p class="text-xl font-semibold">234</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="mt-12 pt-8 border-t border-gray-800">
+                <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+                    <div class="text-sm text-gray-400">
+                        © 2025 BeejSetu Technologies. All rights reserved.
+                        <time datetime="2025-10-26" class="ml-2">
+                            Last updated: October 26, 2025
+                        </time>
+                    </div>
+                    <div class="flex space-x-6 text-sm text-gray-400">
+                        <a href="/privacy" class="hover:underline">Privacy Policy</a>
+                        <a href="/terms" class="hover:underline">Terms of Use</a>
+                        <a href="/accessibility" class="hover:underline">Accessibility</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <style>
+        @media print {
+            footer {
+                background-color: white !important;
+                color: black !important;
+            }
+            footer * {
+                color: black !important;
+            }
+        }
+    </style>
+</body>
+</html>

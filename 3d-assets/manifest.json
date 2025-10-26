@@ -1,0 +1,35 @@
+{
+  "version": "1.0.0",
+  "models": {
+    "warehouses": {
+      "warehouse-basic": {
+        "file": "models/warehouses/warehouse-basic.gltf",
+        "size": "2.5KB",
+        "polygons": 12,
+        "materials": 1,
+        "description": "Basic warehouse model"
+      }
+    },
+    "trucks": {
+      "truck-delivery": {
+        "file": "models/trucks/truck-delivery.gltf",
+        "size": "2.5KB",
+        "polygons": 12,
+        "materials": 1,
+        "description": "Basic delivery truck model"
+      }
+    }
+  },
+  "performance": {
+    "mobile": {
+      "maxPolygons": 5000,
+      "maxTextures": 2,
+      "maxMaterials": 2
+    },
+    "desktop": {
+      "maxPolygons": 15000,
+      "maxTextures": 4,
+      "maxMaterials": 4
+    }
+  }
+}
